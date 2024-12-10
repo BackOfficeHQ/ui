@@ -13,7 +13,7 @@ const sidebarItems = [
     title: "Foundations",
     links: [
       { title: "Colors", href: "#" },
-      { title: "Typography", href: "#" },
+      { title: "Typography", href: "/foundations/typography" },
       { title: "Spacing", href: "#" },
     ],
   },
