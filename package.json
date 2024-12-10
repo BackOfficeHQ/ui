@@ -1,0 +1,19 @@
+{
+  "name": "ui",
+  "description": "A design system for building Back Office",
+  "main": "index.js",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "docs:dev": "turbo run dev --filter=docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2"
+  }
+}
