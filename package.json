@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "docs:dev": "turbo run dev --filter=docs"
+    "docs:dev": "turbo run dev --filter=docs",
+    "ui:dev": "turbo run dev --filter=ui"
   },
   "keywords": [],
   "author": "",
