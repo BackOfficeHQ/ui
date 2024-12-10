@@ -51,3 +51,13 @@ If you want to contribute code, please follow these steps:
 6. **Open a pull request:**
 
 Go to our [GitHub repository](https://github.com/BackOfficeHQ/ui) and open a pull request. Please provide a clear and descriptive title and description of your changes.
+
+## Documentation
+
+If your contribution affects the documentation, please update it accordingly. Documentation is located in the docs directory.
+
+## Code of Conduct
+
+Please note that this project is released with a Contributor Code of Conduct. By participating in this project, you agree to abide by its terms.
+
+Thank you for your contributions! :hearts:
