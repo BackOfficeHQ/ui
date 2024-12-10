@@ -1,4 +1,3 @@
-*Create README*
 # Backoffice UI
 
 This project is the user interface for the back office system.
