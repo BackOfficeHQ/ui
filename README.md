@@ -1,4 +1,4 @@
-# Backoffice UI
+# Back Office UI
 
 This project is the user interface for the back office system.
 
