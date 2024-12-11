@@ -35,12 +35,14 @@ export default function RootLayout({
           {/* Header */}
           <Header />
 
-          <div className="flex pt-16 min-h-screen">
+          <div className="flex pt-14 min-h-screen">
             {/* Sidebar */}
             <Sidebar />
 
             {/* Main Content */}
-            <main className="flex-1 ml-64 p-8">{children}</main>
+            <main className="flex-1 ml-64 p-8">
+              <div className="max-w-3xl mx-auto pt-12">{children}</div>
+            </main>
           </div>
         </div>
       </body>

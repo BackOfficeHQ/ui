@@ -29,7 +29,7 @@ const sidebarItems = [
 
 export default function Sidebar() {
   return (
-    <aside className="fixed left-0 top-16 w-64 h-[calc(100vh-4rem)] border-r overflow-y-auto">
+    <aside className="fixed left-0 top-14 w-64 h-[calc(100vh-2rem)] border-r overflow-y-auto">
       <nav className="px-2 py-4">
         <div className="space-y-6">
           {sidebarItems.map((section) => (

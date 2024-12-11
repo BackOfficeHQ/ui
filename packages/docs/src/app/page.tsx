@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="max-w-3xl mx-auto pt-12">
+    <>
       <div className="flex mb-8">
         <div className="w-2/3">
           <h1 className="text-4xl font-bold mb-4">Back Office Design System</h1>
@@ -34,6 +34,6 @@ export default function Home() {
           are welcome!
         </p>
       </div>
-    </div>
+    </>
   );
 }
