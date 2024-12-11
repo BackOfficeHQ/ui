@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { fn } from "@storybook/test";
 
 import { Title } from "./Title";
 
@@ -31,4 +30,16 @@ type Story = StoryObj<typeof meta>;
 
 export const Display: Story = {
   args: { variant: "display", children: "Display" },
+};
+
+export const Large: Story = {
+  args: { variant: "large", children: "Large" },
+};
+
+export const Medium: Story = {
+  args: { variant: "medium", children: "Medium" },
+};
+
+export const Small: Story = {
+  args: { variant: "small", children: "Small" },
 };
