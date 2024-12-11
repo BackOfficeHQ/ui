@@ -1,41 +1,32 @@
-import path from "path";
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import dts from 'vite-plugin-dts';
+import dts from "vite-plugin-dts";
+import { resolve } from "path";
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    dts({
-      insertTypesEntry: true,
-      include: ["src"],
-    }),
-  ],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.ts"),
+      entry: resolve(__dirname, "src/index.ts"),
       name: "ui",
-      formats: ["es", "cjs"],
-      fileName: (format) => `index.${format === "es" ? "js" : "cjs"}`,
+      fileName: "index",
+      formats: ["es", "umd"],
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: [], // Add external dependencies here
       output: {
         globals: {
-          react: "React",
-          "react-dom": "ReactDOM",
+          // Define global variables for UMD build
         },
-        assetFileNames: 'styles.[ext]',
       },
     },
-    sourcemap: true,
-    // Ensure CSS is extracted
-    cssCodeSplit: true,
   },
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "./src"),
+    },
+  },
+  plugins: [
+    dts({
+      insertTypesEntry: true,
+    }),
+  ],
 });
