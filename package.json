@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "backoffice-ui",
   "version": "0.0.1",
   "description": "A design system for building Back Office",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "build": "turbo run build",
     "docs:dev": "turbo run dev --filter=docs",
     "ui:dev": "turbo run dev --filter=ui",
-    "publish": "turbo run publish-packages --filter=ui"
+    "publish": "turbo run publish-packages --filter @backoffice-hq/ui"
   },
   "keywords": [],
   "author": "",
