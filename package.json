@@ -7,7 +7,8 @@
     "dev": "turbo run dev",
     "build": "turbo run build",
     "docs:dev": "turbo run dev --filter=docs",
-    "ui:dev": "turbo run dev --filter=ui"
+    "ui:dev": "turbo run dev --filter=ui",
+    "publish": "turbo run publish-packages --filter=ui"
   },
   "keywords": [],
   "author": "",

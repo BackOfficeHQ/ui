@@ -11,6 +11,10 @@
       "outputs": [".next/**", "!.next/cache/**", "dist/**"],
       "dependsOn": ["^build"]
     },
+    "publish-packages": {
+      "cache": false,
+      "dependsOn": ["build"]
+    },
     "start": {
       "cache": false
     },
