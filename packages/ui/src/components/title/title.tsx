@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import React from "react";
 
 export interface TitleProps extends React.HTMLAttributes<HTMLHeadingElement> {
@@ -21,16 +20,16 @@ const defaultElements = {
   small: "h3",
 } as const;
 
-export const Title: React.FC<TitleProps> = ({
+export const Title = ({
   variant = "medium",
   as,
   children,
   className,
   ...props
-}) => {
+}: TitleProps) => {
   const Element = as || defaultElements[variant];
   return (
-    <Element className={cn(variantStyles[variant], className)} {...props}>
+    <Element className={variantStyles[variant]} {...props}>
       {children}
     </Element>
   );
