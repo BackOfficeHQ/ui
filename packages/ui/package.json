@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "@backoffice-hq/ui",
   "version": "1.0.0-alpha.1",
   "type": "module",
   "files": [
@@ -19,9 +19,19 @@
     "dev": "storybook dev -p 6006",
     "build": "vite build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "publish-packages": "pnpm publish --access public"
   },
-  "keywords": [],
+  "keywords": [
+    "backoffice",
+    "ui",
+    "react",
+    "storybook",
+    "tailwindcss",
+    "vite",
+    "typescript",
+    "component-library"
+  ],
   "author": "contact@backoffice.co.th <Back Office Technology Co., Ltd.>",
   "license": "MIT",
   "devDependencies": {
