@@ -4,11 +4,12 @@
   "description": "A design system for building Back Office",
   "main": "index.js",
   "packageManager": "pnpm@9.15.0",
+  "workspaces": ["packages/*"],
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "docs:dev": "turbo run dev --filter=docs",
-    "ui:dev": "turbo run dev --filter=ui",
+    "docs:dev": "turbo run dev --filter=@backoffice-hq/docs",
+    "ui:dev": "turbo run dev --filter=@backoffice-hq/ui",
     "publish-packages": "turbo run publish-packages --filter @backoffice-hq/ui"
   },
   "keywords": [],
