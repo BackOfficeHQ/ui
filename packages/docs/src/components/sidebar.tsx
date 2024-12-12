@@ -4,7 +4,7 @@ const sidebarItems = [
   {
     title: "Guides",
     links: [
-      { title: "Introduction", href: "/" },
+      { title: "Introduction", href: "/guides/introduction" },
       { title: "Getting Started", href: "#" },
       { title: "Components", href: "#" },
     ],

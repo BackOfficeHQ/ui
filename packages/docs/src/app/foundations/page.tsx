@@ -1,9 +1,9 @@
-import { Title } from "ui";
+import { Title } from "@backoffice-hq/ui";
 
 export default function Page() {
   return (
     <>
-      <Title variant="display">Foundations</Title>
+      <Title>Foundations</Title>
     </>
   );
 }

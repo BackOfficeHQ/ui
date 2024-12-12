@@ -1,4 +1,3 @@
-import { Title } from "ui";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -7,6 +6,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { Title } from "@backoffice-hq/ui";
 
 export default function Page() {
   return (
@@ -23,6 +23,27 @@ export default function Page() {
         </BreadcrumbList>
       </Breadcrumb>
       <div className="mt-8">
+        <Title className="mb-8">Typography</Title>
+        <div className="prose max-w-none mb-12">
+          <p>
+            Typography is a fundamental aspect of our design system, providing a
+            cohesive and consistent visual language across all user interfaces.
+            Our typography guidelines ensure that text is legible, readable, and
+            visually appealing, enhancing the overall user experience.
+          </p>
+          <p>
+            The design system includes various typographic elements such as
+            headings, subheadings, body text, and labels, each with specific
+            styles and use cases. These elements are designed to create a clear
+            hierarchy, guiding users through the content and making it easy to
+            understand and navigate.
+          </p>
+          <p>
+            By adhering to these typography guidelines, we maintain a unified
+            look and feel across all our products, reinforcing our brand
+            identity and improving usability.
+          </p>
+        </div>
         <div className="border-b mb-8">
           <Title variant="display">Display</Title>
           <p className="my-8">

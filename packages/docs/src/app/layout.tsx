@@ -4,6 +4,16 @@ import "./globals.css";
 import Header from "@/components/header";
 import Sidebar from "@/components/sidebar";
 
+let ShadcnThemeEditor: any;
+if (process.env.NODE_ENV === "development") {
+  import("shadcn-theme-editor").then((module) => {
+    ShadcnThemeEditor = module.default; // or module, depending on the module's export
+  });
+} else {
+  // eslint-disable-next-line react/display-name
+  ShadcnThemeEditor = () => null;
+}
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -45,6 +55,7 @@ export default function RootLayout({
             </main>
           </div>
         </div>
+        <ShadcnThemeEditor />
       </body>
     </html>
   );
