@@ -1,36 +1,38 @@
 import React from "react";
+import { cn,  } from "@/lib/utils";
+import { cva, VariantProps } from "class-variance-authority";
+import { Slot } from "@radix-ui/react-slot";
 
-export interface TitleProps extends React.HTMLAttributes<HTMLHeadingElement> {
-  variant?: "display" | "large" | "medium" | "small";
+export interface TitleProps
+  extends React.HTMLAttributes<HTMLHeadingElement>,
+    VariantProps<typeof textVariants> {
+  asChild?: boolean;
   as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  children: React.ReactNode;
 }
 
-const variantStyles = {
-  display: "text-7xl md:text-8xl font-bold tracking-tight",
-  large: "text-4xl md:text-5xl font-bold tracking-tight",
-  medium: "text-3xl md:text-4xl font-semibold tracking-tight",
-  small: "text-2xl md:text-3xl font-semibold tracking-tight",
-};
+const textVariants = cva("font-medium tracking-tight", {
+  variants: {
+    variant: {
+      display: "text-3xl md:text-5xl",
+      large: "text-2xl md:text-4xl",
+      medium: "text-xl md:text-3xl",
+      small: "text-lg md:text-2xl",
+    },
+  },
+  defaultVariants: {
+    variant: "medium",
+  },
+});
 
-const defaultElements = {
-  display: "h1",
-  large: "h1",
-  medium: "h2",
-  small: "h3",
-} as const;
-
-export const Title = ({
-  variant = "medium",
-  as,
-  children,
+export const Title: React.FC<TitleProps> = ({
+  asChild = false,
+  as = "h1",
   className,
+  variant = "medium",
   ...props
-}: TitleProps) => {
-  const Element = as || defaultElements[variant];
+}) => {
+  const Comp = asChild ? Slot : as;
   return (
-    <Element className={variantStyles[variant]} {...props}>
-      {children}
-    </Element>
+    <Comp className={cn(textVariants({ variant }), className)} {...props} />
   );
 };
