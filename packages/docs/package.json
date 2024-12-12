@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "@backoffice-hq/docs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@backoffice-hq/ui": "workspace:*",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -17,16 +18,17 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7",
-    "ui": "workspace:*"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^20.17.9",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.2",
     "eslint": "^8.57.1",
     "eslint-config-next": "15.0.4",
     "postcss": "^8.4.49",
+    "shadcn-theme-editor": "^1.4.1",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.7.2"
   }

@@ -5,8 +5,8 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
@@ -20,7 +20,8 @@
     "build": "vite build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "publish-packages": "pnpm publish --access public"
+    "publish-packages": "pnpm publish --access public",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "backoffice",
@@ -56,6 +57,7 @@
     "vite-plugin-dts": "^4.3.0"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.468.0",
