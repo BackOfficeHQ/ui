@@ -1,0 +1,11 @@
+{
+  "mode": "pre",
+  "tag": "alpha",
+  "initialVersions": {
+    "@backoffice-hq/docs": "0.0.1",
+    "@backoffice-hq/ui": "0.0.1"
+  },
+  "changesets": [
+    "hip-sloths-dance"
+  ]
+}
