@@ -1,6 +1,6 @@
 {
   "name": "@backoffice-hq/ui",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.0",
   "type": "module",
   "files": [
     "dist"
@@ -65,5 +65,8 @@
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

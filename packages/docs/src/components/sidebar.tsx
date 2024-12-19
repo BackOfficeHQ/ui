@@ -20,9 +20,10 @@ const sidebarItems = [
   {
     title: "Components",
     links: [
-      { title: "Buttons", href: "#" },
+      { title: "Button", href: "/components/button" },
       { title: "Forms", href: "#" },
       { title: "Navigation", href: "#" },
+      { title: "Input", href: "/components/input" },
     ],
   },
 ];
