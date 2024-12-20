@@ -1,15 +1,10 @@
 {
   "name": "backoffice-ui",
   "description": "A design system for building Back Office",
-  "main": "index.js",
-  "packageManager": "pnpm@9.15.0",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "docs:dev": "turbo run dev --filter=@backoffice-hq/docs",
+    "www:dev": "turbo run dev --filter=@backoffice-hq/www",
     "ui:dev": "turbo run dev --filter=@backoffice-hq/ui",
     "publish-packages": "turbo run publish-packages --filter @backoffice-hq/ui"
   },
@@ -21,5 +16,9 @@
     "prettier": "^3.4.2",
     "turbo": "^2.3.3",
     "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=18"
   }
 }
